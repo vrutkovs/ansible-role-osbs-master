@@ -10,7 +10,7 @@ dnsIP: {{ ansible_default_ipv4.address }}
 dockerConfig:
   execHandlerName: native
 imageConfig:
-  format: openshift/origin-${component}:${version}
+  format: registry.access.redhat.com/openshift3/ose-${component}:${version}
   latest: false
 iptablesSyncPeriod: 5s
 kind: NodeConfig
